@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+  <link style="text/css" rel="stylesheet" href="index.css">
+  <title>My Website</title>
+</head>
+
+
+<body>
+  <!-- HEADER SECTION -->
+  <header>
+    <img src="https://th.bing.com/th?id=OIP.bn4lfLQ0saXdddhvwvWSuQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2.png"
+      class="logo" />
+    <nav>
+      <a href="" class="home">Home</a>
+      <a href="" class="profile">Our Profile</a>
+      <a href="" class="achievement">Achievement</a>
+      <a href="" class="message">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main>
+    <!-- HOME SECTION -->
+    <section class="home-section">
+      <section class="welcome-text">
+        <p id="welcome-text1">Hi Jess, Welcome to Website!</p>
+        <p id="welcome-text2">Ini adalah website latihan pertama</p>
+      </section>
+      <img src="" class="banner" />
+    </section>
+
+    <!-- OUR FACILITATION SECTION -->
+    <section class="facilities-section">
+      <p id="title-section1">Our Facilitation</p>
+      <section class="facilities-container">
+        <section class="facilities-box">
+          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="first-picture" />
+          <p>Professional Teacher</p>
+        </section>
+        <section class="facilities-box">
+          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="second-picture" />
+          <p>Sport Field</p>
+        </section>
+        <section class="facilities-box">
+          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="third-picture" />
+          <p>Classroom</p>
+        </section>
+      </section>
+    </section>
+
+    <!-- MESSAGE US SECTION -->
+    <section class="message-section">
+      <p id="title-section2">Message Us</p>
+      <section class="message-container">
+        <!-- MESSAGE INPUT SECTION -->
+        <article class="message-input">
+          <section class="form-row">
+            <label class="label" for="nama">Nama</label>
+            <label class="colon" for="colon">: </label>
+            <input class="textbox" type="text" id="nama" name="nama">
+          </section>
+          <section class="form-row">
+            <label class="label" for="born">Tanggal Lahir</label>
+            <label class="colon" for="colon">: </label>
+            <input class="textbox" type="date" id="born">
+          </section>
+          <section class="form-row">
+            <label class="label">Jenis Kelamin</label>
+            <label class="colon" for="colon">: </label>
+            <section class="radio-group">
+              <label><input type="radio" name="gender" value="laki-laki">Laki-laki</label>
+              <label><input type="radio" name="gender" value="Perempuan">Perempuan</label>
+            </section>
+          </section>
+          <section class="form-row">
+            <label class="label" for="message">Pesan</label>
+            <label class="colon" for="colon">: </label>
+            <textarea class="textbox" name="message" rows="5"></textarea>
+          </section>
+          <button class="submit" type="submit">Submit</button>
+        </article>
+
+        <!-- MESSAGE OUTPUT SECTION -->
+        <article class="message-output">
+          <textarea class="output-textbox" name="message"></textarea>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>Created by RevoU</p>
+  </footer>
+
+</body>
+
+</html>

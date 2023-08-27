@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+/*HEADER SECTION*/
+header {
+    display: flex;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-family: 'Itim';
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px 0px 8px 40px;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    border: 1px ridge black;
+}
+
+a {
+    justify-content: center;
+    padding: 5px 30px 5px 30px;
+    text-decoration: none;
+}
+
+.home {
+    border-right: 1px ridge black;
+    display: flex;
+}
+
+.profile {
+    border-right: 1px ridge black;
+    display: flex;
+}
+
+.achievement {
+    border-right: 1px ridge black;
+    display: flex;
+}
+
+/*HOME SECTION*/
+.home-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    height: 578px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    font-family: 'Itim';
+    margin-top: 20px;
+}
+
+#welcome-text1 {
+    font-size: 26pt;
+    line-height: 0pt;
+    font-weight: bold;
+}
+
+#welcome-text2 {
+    font-size: 16pt;
+    line-height: 0pt;
+    font-family: 'Itim';
+}
+
+
+/*OUR FACILITATION SECTION*/
+.facilities-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    font-family: 'Itim';
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#title-section1 {
+    font-size: 26pt;
+    line-height: 0pt;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+.facilities-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    justify-content: space-around;
+    width: 600px;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 16pt;
+}
+
+.facilities-box {
+    display: flex;
+    flex-direction: column;
+    width: 180;
+    height: 180;
+    align-items: center;
+    text-align: center;
+}
+
+.facilities-box img {
+    width: 180;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.facilities-box p {
+    font-size: 16pt;
+    line-height: 0pt;
+    font-family: 'Itim';
+    text-align: center;
+}
+
+/*MESSAGE US SECTION*/
+.message-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    font-family: 'Itim';
+    margin-top: 20px;
+    padding-bottom: 60px;
+    font-size: 16pt;
+}
+
+#title-section2 {
+    font-size: 26pt;
+    line-height: 0pt;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+.message-container {
+    flex-direction: row;
+    display: flex;
+}
+
+.message-container>article {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*MESSAGE INPUT ARTICLE*/
+.message-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-left: 120px;
+    justify-content: space-around;
+    margin-right: 70px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    flex: 1, 5;
+    min-width: 150px;
+}
+
+.colon {
+    min-width: 15px;
+}
+
+.textbox {
+    flex: 2;
+    padding: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*MESSAGE INPUT ARTICLE*/
+.message-output {
+    margin-right: 40px;
+    margin-left: 70px;
+}
+
+.output-textbox {
+    width: 100%;
+    height: auto;
+
+}
+
+/*FOOTER SECTION*/
+footer {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Itim';
+    margin-top: 20px;
+    
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+footer>p{
+    margin-right: 40px;
+    font-size: 16pt;
+}
