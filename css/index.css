@@ -1,58 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Itim');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
-/*HEADER SECTION*/
-header {
-    display: flex;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    font-family: 'Itim';
-    align-items: center;
-    justify-content: space-between;
+body{
+    background-color: #141a2b;
+    font-weight: 100;
+    margin-top: 90px;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #141a2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 1000;
+    border-bottom: 1px ridge white;
+    border-top: 1px ridge white;
+    font-family: 'VT323';
+    transition: 0.6s;
+  }
+
+  
+header .logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
     display: flex;
     justify-content: flex-start;
-    margin: 8px 0px 8px 40px;
+    margin: 8px 0px 8px 20px;
+    
 }
 
 /*navbar*/
-nav {
+header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 40px;
-    border: 1px ridge black;
+    margin-right: 80px;   
 }
 
-a {
+header nav a {
     justify-content: center;
     padding: 5px 30px 5px 30px;
     text-decoration: none;
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
 }
 
-.home {
-    border-right: 1px ridge black;
+header nav a:hover {
+    
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.2);
+    color: #dc8ab0;
+    font-size: 22pt;
+  }
+
+  /*
+  {
+    border-right: 1px ridge white;
     display: flex;
+    
 }
 
 .profile {
-    border-right: 1px ridge black;
+    border-right: 1px ridge white;
     display: flex;
+    color: white;
 }
 
 .achievement {
-    border-right: 1px ridge black;
+    border-right: 1px ridge white;
     display: flex;
+    color: white;
 }
+
+.message {
+    display: flex;
+    color: white;
+}
+
+
 
 /*HOME SECTION*/
 .home-section {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    border-bottom: 1px ridge white;
     height: 578px;
 }
 
@@ -60,38 +98,42 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 120px;
-    font-family: 'Itim';
-    margin-top: 20px;
+    font-family: 'VT323';
+    margin-top: 60px;
 }
 
 #welcome-text1 {
-    font-size: 26pt;
+    font-size: 30pt;
     line-height: 0pt;
-    font-weight: bold;
+    font-weight: 200;
+    color: #f7f0f6;
 }
 
 #welcome-text2 {
-    font-size: 16pt;
+    font-size: 16px;
     line-height: 0pt;
-    font-family: 'Itim';
+    font-family: 'PT Mono';
+    color: #dc8ab0;
+    background-color: #8f216c;
 }
 
 
-/*OUR FACILITATION SECTION*/
-.facilities-section {
+/*PROFILE SECTION*/
+.profile-section {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
-    font-family: 'Itim';
-    margin-top: 20px;
+    border-bottom: 1px ridge white;
+    font-family: 'VT323';
+    margin-top: 60px;
     padding-bottom: 40px;
 }
 
 #title-section1 {
-    font-size: 26pt;
+    font-size: 30pt;
     line-height: 0pt;
-    font-weight: bold;
+    font-weight: 200;
     margin-left: 120px;
+    color: #f7f0f6;
 }
 
 .facilities-container {
@@ -103,6 +145,7 @@ a {
     align-items: flex-start;
     margin-top: 20px;
     font-size: 16pt;
+    color: #f7f0f6;
 }
 
 .facilities-box {
@@ -125,7 +168,7 @@ a {
 .facilities-box p {
     font-size: 16pt;
     line-height: 0pt;
-    font-family: 'Itim';
+    font-family: 'VT323';
     text-align: center;
 }
 
@@ -133,18 +176,19 @@ a {
 .message-section {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
-    font-family: 'Itim';
-    margin-top: 20px;
+    border-bottom: 1px ridge white;
+    font-family: 'VT323';
+    margin-top: 60px;
     padding-bottom: 60px;
     font-size: 16pt;
 }
 
 #title-section2 {
-    font-size: 26pt;
+    font-size: 30pt;
     line-height: 0pt;
-    font-weight: bold;
+    font-weight: 200;
     margin-left: 120px;
+    color: #f7f0f6;
 }
 
 .message-container {
@@ -168,7 +212,8 @@ a {
     width: 100%;
     margin-left: 120px;
     justify-content: space-around;
-    margin-right: 70px;
+    margin-right: 100px;
+    color: #f7f0f6;
 }
 
 .form-row {
@@ -204,8 +249,8 @@ a {
 
 /*MESSAGE INPUT ARTICLE*/
 .message-output {
-    margin-right: 40px;
-    margin-left: 70px;
+    margin-right: 120px;
+    margin-left: 100px;
 }
 
 .output-textbox {
@@ -218,14 +263,14 @@ a {
 footer {
     display: flex;
     justify-content: flex-end;
-    font-family: 'Itim';
+    font-family: 'VT323';
     margin-top: 20px;
-    
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px ridge white;
 }
 
 footer>p{
     margin-right: 40px;
     font-size: 16pt;
+    color: #f7f0f6;
 }
