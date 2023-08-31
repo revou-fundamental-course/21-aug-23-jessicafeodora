@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-  <link style="text/css" rel="stylesheet" href="css/index.css">
-  
   <title>My Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link style="text/css" rel="stylesheet" href="css/index.css">
 </head>
 
 
 <body>
-  <script src="js/script.js"></script>
   <!-- HEADER SECTION -->
   <header id="persist-header">
     <a href="https://revou.co">
       <img src="assets/revou-logo.png" class="logo">
     </a>
     <nav>
-      <a href="#home-section" class="home">Home</a>
-      <a href="#profile-section" class="profile">My Profile</a>
-      <a href="" class="achievement">Achievement</a>
-      <a href="#message-section" class="message">Message Us</a>
+      <ul>
+        <li><a href="#home-section" class="home">Home</a></li>
+        <li><a href="#profile-section" class="profile">Our Profile</a></li>
+        <li><a href="#achievement-section" class="achievement">Achievement</a></li>
+        <li><a href="#message-section" class="message">Message Us</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -32,68 +32,146 @@
     <!-- HOME SECTION -->
     <section class="home-section">
       <section class="welcome-text">
-        <p id="welcome-text1">Hi, welcome to my website!</p>
-        <p id="welcome-text2">Please validate your name here</p>
+        <p id="welcome-text1">Virtus in Veritate: Lucem Cordibus Accendimus</p>
+        <p id="welcome-text2">Hi <span id="welcome-name">there</span>, welcome to Harapan Bangsa High School, where
+          minds shine and values inspire</p>
         <br>
-        <p id="welcome-text2">Ini adalah website latihan pertama</p>
+        <p id="welcome-text3">This is an official website of Harapan Bangsa Senior High School. If you want to share
+          your experience or feedback, click <a href="#message-section">here</a></p>
       </section>
-      <img src="" class="banner" />
+      <img class="image-slide" src="assets/exterior.jpg" />
+      <img class="image-slide" src="assets/hallway.jpg" />
+      <img class="image-slide" src="assets/canteen.jpg" />
+      <img class="image-slide" src="assets/library.jpg" />
+      <img class="image-slide" src="assets/soccer-field.jpg" />
     </section>
 
     <!-- PROFILE SECTION -->
-    <section class="profile-section" id="profile-section">
-      <p id="title-section1">Let's get closer with me!</p>
-      <section class="facilities-container">
-        <section class="facilities-box">
-          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="first-picture" />
-          <p>Professional Teacher</p>
+    <section id="profile-section" class="profile-section">
+      <p id="title-section1">Our Profile</p>
+      <section class="profile-text">
+        <p class="intro-text">Harapan Bangsa High School, a distinguished educational institution under the aegis of the
+          esteemed Nusa Bangsa Foundation, stands as a beacon of educational excellence in Indonesia. Since its
+          inception in the year 2004, the school has held a steadfast commitment to nurturing and preparing the
+          forthcoming generation to be architects of a brighter Indonesia.</p>
+
+        <p class="vision-mission">Vision:</p>
+        <p class="vision">Our vision is to prepare and motivate our students for a rapidly changing world by instilling
+          in them critical thinking skills, a global perspective, and a respect for core values of honesty, loyalty,
+          perseverance, and compassion. Students will have success for today and be prepared for tomorrow.</p>
+
+        <p class="vision-mission">Mission:</p>
+        <p class="mission"> 1. Nurturing Critical Thinkers: The school's foremost mission is to foster the growth of
+          critical thinking skills among its students. Through an innovative and engaging pedagogical approach, Harapan
+          Bangsa High School ensures that students are provided with opportunities to delve deeply into subjects,
+          analyze information, synthesize knowledge, and formulate informed judgments. By honing their critical thinking
+          abilities, students are not only equipped to solve complex challenges but are also primed to navigate the
+          intricate web of the modern world with acuity and astuteness. </p>
+        <p class="mission">2. Building Global Mindsets: In a world that is increasingly interconnected, the school
+          recognizes the importance of imbuing students with a global perspective. Harapan Bangsa High School aspires to
+          instill a profound understanding of diverse cultures, viewpoints, and global issues. This international
+          outlook is nurtured through initiatives such as cross-cultural exchanges, international collaborations, and
+          exposure to various worldviews. By embracing and respecting different perspectives, students are prepared to
+          be compassionate and effective global citizens who contribute positively to the broader society. </p>
+        <p class="mission">3. Instilling Core Values for Success: The bedrock of Harapan Bangsa High School's mission
+          lies in the cultivation of core values such as honesty, loyalty, perseverance, and compassion. These values
+          are not only taught within the classroom but are also woven into the fabric of the school's environment.
+          Through a harmonious interplay of mentorship, camaraderie, and ethical guidance, the school aims to develop
+          individuals of integrity who not only excel academically but also exhibit qualities that enhance the
+          collective welfare. These values empower students to become leaders who are not only proficient in their
+          chosen fields but also conscious of their social responsibilities. </p>
+      </section>
+    </section>
+
+    <!-- ACHIEVEMENT SECTION -->
+    <section id="achievement-section" class="achievement-section">
+      <p id="title-section2">Our Achievement</p>
+      <section class="achievement-container">
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/fe/36/db/fe36dbada6178fb1989a0a4eac6eb4af.jpg" alt="first-achievement" />
+          <p>#2 Science and Mathematics Olimpiade (2022)</p>
         </section>
-        <section class="facilities-box">
-          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="second-picture" />
-          <p>Sport Field</p>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/750x/29/bf/e4/29bfe4d7a4a3b8a58bf3cfe950d775b8.jpg" alt="second-achievement" />
+          <p>Group #1 Information and Technology Competition(2021)</p>
         </section>
-        <section class="facilities-box">
-          <img src="https://i.pinimg.com/564x/5f/1a/ff/5f1affa255133498a77d1f22d8159249.jpg" alt="third-picture" />
-          <p>Classroom</p>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/47/25/ab/4725abaeb3de4e81ae7cc2676f75501b.jpg" alt="third-achievement" />
+          <p>Duo #2 Debate at Festival of Social Sciences</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/eb/b9/3e/ebb93eaab05b9d3c6d6fc88837d616f5.jpg" alt="fourth-achievement" />
+          <p>175 students entered 25 PTN</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/12/ba/28/12ba28e750a81af63bab5e5619f5ea18.jpg" alt="fifth-achievement" />
+          <p>25 students entered 6 PTLN</p>
+        </section>
+      </section>
+      <section class="achievement-container">
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/236x/37/61/d0/3761d03ceeb5c8c85dc6b51dc755a732.jpg" alt="first-achievement" />
+          <p>#1 Internationale Singing Competition (2023)</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/88/74/f7/8874f7ceaf7fa05b6972c3e2d2cea885.jpg" alt="fourth-achievement" />
+          <p>#1 Senior Solo de Danse (2022)</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/df/f9/ff/dff9ff3a7a942f522151a3753e16c54d.jpg" alt="third-achievement" />
+          <p>#1 National Basket League (NBL) Indonesia (2020)</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/736x/22/11/06/2211067f707a0e612bc0e5f81122ee19.jpg" alt="first-achievement" />
+          <p>Sportgala #VANRSL (2019)</p>
+        </section>
+        <section class="achievement-box">
+          <img src="https://i.pinimg.com/564x/0b/b0/57/0bb05725126734eefa67de54b23e489d.jpg" alt="fifth-achievement" />
+          <p>and many more</p>
         </section>
       </section>
     </section>
 
-    <!-- MESSAGE US SECTION -->
+    <!-- MESSAGE ME SECTION -->
     <section class="message-section" id="message-section">
-      <p id="title-section2">Let me know about you!</p>
+      <p id="title-section3">Message Us</p>
       <section class="message-container">
         <!-- MESSAGE INPUT SECTION -->
         <article class="message-input">
-          <section class="form-row">
-            <label class="label" for="nama">Nama</label>
-            <label class="colon" for="colon">: </label>
-            <input class="textbox" type="text" id="nama" name="nama">
-          </section>
-          <section class="form-row">
-            <label class="label" for="born">Tanggal Lahir</label>
-            <label class="colon" for="colon">: </label>
-            <input class="textbox" type="date" id="born">
-          </section>
-          <section class="form-row">
-            <label class="label">Jenis Kelamin</label>
-            <label class="colon" for="colon">: </label>
-            <section class="radio-group">
-              <label><input type="radio" name="gender" value="laki-laki">Laki-laki</label>
-              <label><input type="radio" name="gender" value="Perempuan">Perempuan</label>
+          <form name="message-form" onsubmit="return validateForm()">
+            <section class="form-row">
+              <label class="label" name="fullname">Name</label>
+              <label class="colon" for="colon">: </label>
+              <input id="name-input" class="textbox" type="text" name="name-input">
             </section>
-          </section>
-          <section class="form-row">
-            <label class="label" for="message">Pesan</label>
-            <label class="colon" for="colon">: </label>
-            <textarea class="textbox" name="message" rows="5"></textarea>
-          </section>
-          <button class="submit" type="submit">Submit</button>
+            <section class="form-row">
+              <label class="label" name="born">Birthdate</label>
+              <label class="colon" for="colon">: </label>
+              <input id="birth-input" class="textbox" type="date" name="birth-input">
+            </section>
+            <section class="form-row">
+              <label class="label">Gender</label>
+              <label class="colon" for="colon">: </label>
+              <section class="radio-group">
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+              </section>
+
+            </section>
+            <section class="form-row">
+              <label class="label" for="message">Message</label>
+              <label class="colon" for="colon">: </label>
+              <textarea id="message-input" class="textbox" rows="5" placeholder="You can give your feedback here."
+                name="message-input"></textarea>
+            </section>
+            <button id="submit-button" class="submit" type="submit">Submit</button>
+          </form>
         </article>
 
         <!-- MESSAGE OUTPUT SECTION -->
         <article class="message-output">
-          <textarea class="output-textbox" name="message"></textarea>
+          <textarea id="form-output" class="output-textbox" name="message-output"
+            placeholder="Your message will be displayed here."></textarea>
         </article>
       </section>
     </section>
@@ -101,11 +179,10 @@
 
   <!-- FOOTER SECTION -->
   <footer>
-    <p>Created by RevoU</p>
+    <p>Created by <a href="instagram.com/jessicafeodora">@jessicafeodora</a></p>
   </footer>
 
-
-  
+  <script src="js/script.js"></script>
 </body>
 
 </html>

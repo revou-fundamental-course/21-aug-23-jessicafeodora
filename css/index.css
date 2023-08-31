@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
-@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body{
-    background-color: #141a2b;
+body {
+
+    background-image: linear-gradient(0deg, transparent, #141a2b),
+        url(https://i.pinimg.com/564x/eb/42/22/eb4222f4a827f2cf1dd850b3b743242d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     font-weight: 100;
     margin-top: 90px;
 }
@@ -20,11 +25,16 @@ header {
     z-index: 1000;
     border-bottom: 1px ridge white;
     border-top: 1px ridge white;
-    font-family: 'VT323';
-    transition: 0.6s;
-  }
+    font-family: 'Montserrat';
+    transition: 3s;
+}
 
-  
+
+header p {
+    color: white;
+    display: none;
+}
+
 header .logo {
     width: 50px;
     height: 50px;
@@ -32,98 +42,121 @@ header .logo {
     display: flex;
     justify-content: flex-start;
     margin: 8px 0px 8px 20px;
-    
 }
 
 /*navbar*/
 header nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 80px;   
+    margin-right: 80px;
 }
 
-header nav a {
+header nav ul {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 5px 30px 5px 30px;
-    text-decoration: none;
-    font-size: 18pt;
-    text-decoration: none;
-    color: white;
     margin: 0 15px;
 }
 
-header nav a:hover {
-    
+header nav ul li {
+    padding: 5px 30px 5px 30px;
+    font-size: 18pt;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px 5px 30px;
+}
+
+header nav ul li a:hover {
+    border-radius: 30px;
     box-shadow: 0 0 11px rgba(255, 255, 255, 0.2);
     color: #dc8ab0;
     font-size: 22pt;
-  }
-
-  /*
-  {
-    border-right: 1px ridge white;
-    display: flex;
-    
 }
 
-.profile {
-    border-right: 1px ridge white;
-    display: flex;
-    color: white;
+.hamburger{
+    display: none;
+    cursor: pointer;
 }
 
-.achievement {
-    border-right: 1px ridge white;
-    display: flex;
-    color: white;
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
-
-.message {
-    display: flex;
-    color: white;
-}
-
-
 
 /*HOME SECTION*/
 .home-section {
     display: flex;
     flex-direction: column;
     border-bottom: 1px ridge white;
-    height: 578px;
 }
 
 .welcome-text {
     display: flex;
     flex-direction: column;
     margin-left: 120px;
-    font-family: 'VT323';
+    font-family: 'Montserrat';
     margin-top: 60px;
+}
+
+.welcome-text a:visited {
+    color: white;
+}
+
+.welcome-text a:link {
+    color: #dc8ab0;
 }
 
 #welcome-text1 {
     font-size: 30pt;
-    line-height: 0pt;
-    font-weight: 200;
+    font-weight: bold;
     color: #f7f0f6;
+    line-height: 1.5;
 }
 
 #welcome-text2 {
-    font-size: 16px;
-    line-height: 0pt;
-    font-family: 'PT Mono';
-    color: #dc8ab0;
-    background-color: #8f216c;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #f7f0f6;
+    margin-right: 120px;
+    justify-content: justify;
+    line-height: 1.5;
 }
 
+#welcome-text3 {
+    font-size: 16pt;
+    font-family: 'Poppins';
+    color: #dc8ab0;
+    margin-right: 120px;
+    justify-content: justify;
+    line-height: 1.5;
+}
+
+.image-slide {
+    display: block;
+    margin: auto;
+    padding: 20px 120px 40px 120px;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
 
 /*PROFILE SECTION*/
 .profile-section {
     display: flex;
     flex-direction: column;
     border-bottom: 1px ridge white;
-    font-family: 'VT323';
+    font-family: 'Poppins';
     margin-top: 60px;
     padding-bottom: 40px;
 }
@@ -131,45 +164,95 @@ header nav a:hover {
 #title-section1 {
     font-size: 30pt;
     line-height: 0pt;
-    font-weight: 200;
+    font-weight: bold;
     margin-left: 120px;
     color: #f7f0f6;
+    font-family: 'Montserrat';
 }
 
-.facilities-container {
+.intro-text {
+    display: flex;
+    color: #dc8ab0;
+    font-size: 16pt;
+    justify-content: justify;
+    margin-right: 120px;
+}
+
+.profile-text {
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.vision-mission {
+    display: flex;
+    color: white;
+    font-size: 16pt;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.vision, .mission {
+    display: flex;
+    color: #dc8ab0;
+    font-size: 16pt;
+    justify-content: justify;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/*ACHIEVEMENT SECTION*/
+#title-section2 {
+    font-size: 30pt;
+    line-height: 0pt;
+    font-weight: bold;
+    margin-left: 120px;
+    color: #f7f0f6;
+    font-family: 'Montserrat';
+}
+
+.achievement-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px ridge white;
+    font-family: 'Poppins';
+    margin-top: 60px;
+    padding-bottom: 60px;
+    font-size: 16pt;
+}
+
+.achievement-container {
     display: flex;
     flex-direction: row;
     margin-left: 250px;
     justify-content: space-around;
-    width: 600px;
+    width: auto;
     align-items: flex-start;
     margin-top: 20px;
     font-size: 16pt;
     color: #f7f0f6;
+    margin-right: 120px;
 }
 
-.facilities-box {
+.achievement-box {
     display: flex;
     flex-direction: column;
-    width: 180;
-    height: 180;
-    align-items: center;
+    justify-content: center;
     text-align: center;
+    align-content: center;
+    padding-right: 70px;
 }
 
-.facilities-box img {
+.achievement-box img {
     width: 180;
     height: 200px;
     display: flex;
     justify-content: flex-start;
     padding: 10px;
+    border-radius: 50%;
 }
 
-.facilities-box p {
+.achievement-box p {
     font-size: 16pt;
-    line-height: 0pt;
-    font-family: 'VT323';
-    text-align: center;
 }
 
 /*MESSAGE US SECTION*/
@@ -177,23 +260,25 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     border-bottom: 1px ridge white;
-    font-family: 'VT323';
     margin-top: 60px;
     padding-bottom: 60px;
     font-size: 16pt;
 }
 
-#title-section2 {
+#title-section3 {
     font-size: 30pt;
     line-height: 0pt;
-    font-weight: 200;
+    font-weight: bold;
     margin-left: 120px;
     color: #f7f0f6;
+    font-family: 'Montserrat';
 }
 
 .message-container {
     flex-direction: row;
     display: flex;
+    font-family: 'Poppins';
+    padding-bottom: 40px;
 }
 
 .message-container>article {
@@ -263,14 +348,48 @@ header nav a:hover {
 footer {
     display: flex;
     justify-content: flex-end;
-    font-family: 'VT323';
+    font-family: 'Poppins';
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px ridge white;
 }
 
-footer>p{
+footer>p {
     margin-right: 40px;
     font-size: 16pt;
     color: #f7f0f6;
+}
+
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a:link {
+    color: #f7f0f6;
+}
+
+footer a:visited {
+    color: #dc8ab0;
+}
+
+@media screen and (max-width: 858px) {
+    header {
+        position: fixed;
+        flex-direction: column;
+        z-index: 1000;
+        width: 33%;
+    }
+
+    header li{
+        font-size: 10px;
+    }
+
+    header .logo {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 20px;
+    }
 }
